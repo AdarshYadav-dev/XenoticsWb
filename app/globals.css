@@ -11,7 +11,41 @@
 /* ... existing code ... */
 @import "tailwindcss";
 /* ... existing code ... */
+/* 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+} */
+
+/* body, html {
+  width: 100%;
+  overflow-x: hidden;
+} */
+
+
+
+/* Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal reset + prevent horizontal scroll */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Animations */
 @keyframes slideUp {
   0% {
     opacity: 0;
