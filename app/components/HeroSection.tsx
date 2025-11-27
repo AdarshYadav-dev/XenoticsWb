@@ -1,5 +1,7 @@
 
 
+
+
 "use client";
 
 import Image from "next/image";
@@ -22,23 +24,29 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full bg-[#F8F7F7] pt-11 xl:pl-5">
+    // <section className="w-full bg-[#F8F7F7] pt-11 px-4 xl:pl-5">
+    <section className="w-screen max-w-none bg-[#F8F7F7] pt-11 px-4 xl:pl-20 2xl:pl-55 2xl:pr-55 overflow-x-hidden">
+
+
       <div
-        className="
-          max-w-[1280px] mx-auto
-          grid grid-cols-12 gap-12 items-center
-          px-4 sm:px-6 lg:px-12
-        "
+          className="
+           w-full max-w-screen  
+           grid grid-cols-12 gap-6 sm:gap-10 lg:gap-12
+           items-center
+          "
       >
         {/* LEFT SIDE */}
         <div
           className="
             col-span-12 md:col-span-12 lg:col-span-6
-            flex flex-col
+            flex flex-col w-full
             sm:text-center md:text-center lg:text-left
             items-center lg:items-start
           "
         >
+
+
+
           {/* RATINGS — hidden on sm & md */}
           <div className="hidden lg:flex items-center gap-6 text-sm font-semibold text-black ">
             <span className="flex items-center gap-2 text-[#102329] text-[14px] rounded-lg  py-1.5 lg:text-[13px] lg:font-[Inter,'Inter Placeholder',sans-serif] 2xl:text-[#102329] 2xl:text-[14px] 2xl:font-[Inter,'Inter Placeholder',sans-serif] xl:text-[#102329] xl:text-[14px] xl:font-[Inter,'Inter Placeholder',sans-serif]">
@@ -55,7 +63,7 @@ export default function HeroSection() {
           {/* HEADING */}
           <h1
             className=" 
-              font-bold leading-[1.15] mb-4 text-[#102329]
+              font-bold font-[Geist,'Geist Placeholder',sans-serif] text-[36px] leading-[1.15]   mb-4 text-[#102329]
                 sm:font-[Geist,'Geist Placeholder',sans-serif]
                 md:font-[Geist,'Geist Placeholder',sans-serif]
                sm:text-[36px] 
@@ -69,8 +77,8 @@ export default function HeroSection() {
           {/* DESCRIPTION */}
           <p
             className="
-              text-[#212121] max-w-xl mb-4 leading-relaxed
-              text-[15px] sm:text-[17px] md:text-[17px] lg:text-[20px]
+              text-[#212121] font-[Inter,sans-serif] text-lg w-full mb-4 leading-relaxed  text-center 
+              text-[17px] sm:text-[17px] md:text-[17px] lg:text-[20px]
               sm:text-center md:text-center lg:text-left sm:max-w-xs md:max-w-xs lg:max-w-2xl
               2xl:text-[#212121]  lg:font-[Inter,sans-serif] 2xl:text-[20px] 2xl:font-[Inter,sans-serif] xl:text-[#212121] xl:text-[20px] xl:font-[Inter,sans-serif]
             "
@@ -83,11 +91,11 @@ export default function HeroSection() {
           <div
             className="w-full sm:max-w-sm md:max-w-sm
 
-              flex flex-row sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row sm:gap-4 gap-3
+              flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row sm:gap-4 gap-3
               sm:justify-center md:justify-center lg:justify-start
             "
           >
-           
+
             <a
               href="#get-started"
               className="
@@ -113,7 +121,7 @@ export default function HeroSection() {
 
           {/* TRUSTED SECTION */}
           <div
-            className="sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row
+            className="flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row
               flex items-center gap-4 mt-10 text-sm font-medium
               sm:justify-center md:justify-center md:item-center lg:justify-start
             "
@@ -142,8 +150,8 @@ export default function HeroSection() {
               />
             </div>
 
-            <span  className="sm:justify-center md:justify-center md:item-center">
-              Trusted by <strong>{count}+</strong> individuals worldwide
+            <span className="sm:justify-center md:justify-center text-[#212121] md:item-center">
+              Trusted by <strong className="text-[#000000]">{count}+</strong> individuals worldwide
             </span>
           </div>
         </div>
@@ -161,8 +169,9 @@ export default function HeroSection() {
             alt="App screenshot on phone"
             width={380}
             height={720}
-            /*className="sm:translate-y-3 md:translate-y-6"*/
-            className=" 2xl:translate-y-1 sm:-translate-y-8 xl:-translate-x-20"
+            className="sm:translate-y-1  md:translate-y-1 2xl:translate-y-1  2xl:translate-x-5 xl:-translate-x-35 xl:translate-y-1 lg:translate-y-1 "
+
+
             priority
           />
         </div>
