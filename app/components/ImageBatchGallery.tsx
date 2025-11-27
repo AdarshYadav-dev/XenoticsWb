@@ -1,6 +1,9 @@
 
 
 
+
+
+
 import Image from "next/image";
 
 import { TiTick } from "react-icons/ti";
@@ -31,11 +34,12 @@ export default function CryptoHero({ imageSrc = "/Cap5.JPG" }: Props) {
                 Cryptos
               </div>
 
-              <h1 className="mt-6 text-4xl font-semibold tracking-tight md:text-6xl">
+              <h1 className="mt-6 text-[28px] font-[Geist,'Geist Placeholder',sans-serif]
+                    font-semibold tracking-tight md:text-6xl">
                 Your crypto journey starts right here
               </h1>
 
-              <p className="mt-4 max-w-xl text-gray-600">
+              <p className="mt-4 max-w-xl text-[17px] font-[Inter,sans-serif] text-gray-600">
                 Enter the world of cryptocurrency trading with confidence through our integrated crypto platform. Buy, sell, and trade popular digital assets like Bitcoin, Ethereum, and more directly from your account.
               </p>
 
