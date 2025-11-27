@@ -57,14 +57,15 @@ export default function StocksHeroScroll({ phoneSrc }: Props) {
                 inView ? "animate-content-enter" : "opacity-0 translate-y-6",
               ].join(" ")}
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0085EE] text-white text-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0085EE] text-white text-">
                 <span className="h-2 w-2 rounded-full bg-[#0085EE]" />
                 Stocks
               </div>
-              <h2 className="mt-4 text-3xl md:text-5xl font-semibold leading-tight">
+              <h2 className="mt-4 text-[28px] font-[Geist,'Geist Placeholder',sans-serif]
+                 md:text-5xl font-semibold leading-tight">
                 Trade stocks, easier than ever
               </h2>
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-[17px] font-[Inter,sans-serif]">
                 Get real-time access to global markets, commission-free trades, advanced charting,
                 and AI-driven insights—on an intuitive, secure platform designed for speed and simplicity.
               </p>
