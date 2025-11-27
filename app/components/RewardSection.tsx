@@ -18,12 +18,13 @@ export default function CashbackHero() {
                 Cashback
               </div>
 
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold leading-tight">
+              <h2 className="mt-4 text-[28px] font-[Geist,'Geist Placeholder',sans-serif]
+                     md:text-5xl font-bold leading-tight">
                 Get rewards
                 <br /> while you spend
               </h2>
 
-              <p className="mt-4 text-white/90">
+              <p className="mt-4 text-[17px] font-[Inter,sans-serif] text-white/90">
                 Transform your spending into earning with our intelligent cashback system. Get instant
                 rewards on qualifying purchases while enjoying the flexibility of our buy-now–pay-later
                 solution.
@@ -76,12 +77,12 @@ export default function CashbackHero() {
                 </div>
               </div>
 
-              <button className="mt-8 inline-flex items-center gap-2 text-sm font-medium group">
+              {/* <button className="mt-8 inline-flex items-center gap-2 text-sm font-medium group">
                 Start trading
                 <span className="inline-block transition-transform group-hover:translate-x-1">
                   →
                 </span>
-              </button>
+              </button> */}
             </div>
 
             {/* RIGHT SIDE (optional image or illustration) */}
